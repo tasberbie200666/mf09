@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'sf pro display';
+    src: url('../assets/fonts/SF_Pro_Display.ttf');
+  }
+  
+  @font-face {
+    font-family: 'sf pro text';
+    src: url('../assets/fonts/SF_Pro_Text.ttf');
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Text','sf pro display' ;
+  }
+  
+  body {
+    background-color: #fefefe;
+    color: #000;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-color: #fefefe;
+    border-bottom: 1px solid #ddd;
+    font-family: 'sf pro display';
+  }
+  .nav-center {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+  }
+  
+  .logo,
+  .icons img {
+    height: 28px;
+    width: 60px;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .education-offer {
+    background: #f5f5f7;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+  
+  .education-offer a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .product {
+    padding: 10rem 1rem;
+  }
+  
+  .product h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'SF Pro Display', sans-serif;
+  }
+  
+  .mac-mini-img {
+    max-width: 320px;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  .highlight {
+    font-size: 1.1rem;      
+    font-weight: 600;        
+    margin-top: 1rem;
+    color: #000;
+    letter-spacing: 0.3px;   
+  }
+  
+  
+  .gradient {
+    background: linear-gradient(to right, #44abff, #ff2d55, #e36600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .buy-btn {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    border-radius: 999px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .price {
+    font-size: 0.85rem;
+    margin-top: 0.8rem;
+  }
+  
+  .note {
+    font-size: 0.7rem;
+    margin-top: 0.4rem;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .menu-icon {
+      display: inline;
+    }
+    .product h1 {
+      font-size: 2.2rem;
+    }
+    .mac-mini-img {
+      max-width: 240px;
+    }
+    .highlight {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1280px) {
+    .product h1 {
+      font-size: 2.6rem;
+    }
+    .mac-mini-img {
+      max-width: 280px;
+    }
+  }
+  
+  @media (min-width: 1281px) {
+    .product h1 {
+      font-size: 3rem;
+    }
+  }
+  
